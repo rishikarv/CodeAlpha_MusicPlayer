@@ -1,0 +1,147 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+h2{
+    text-align: center;
+    font-size: 28px;
+    color:black;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: linear-gradient(135deg,#0f1728,#202b3c,#111827);
+    padding:20px;
+}
+.player{
+   width:400px;
+   max-width:95%;
+   padding:20px;
+   border-radius: 20px;
+   text-align: center;
+   color:white;
+   background: rgba(105, 102, 102, 0.8);
+   border:1px solid rgba(231, 220, 220, 0.8);
+   backdrop-filter: blur(18px);
+   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+#cover{
+    height:250px;
+    width:300px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+}
+#title{
+    text-align: left;
+    font-size: 25px;
+    margin:18px 8px ;
+    
+}
+#artist{
+    text-align: left;
+    margin:0 8px ;
+    font-size: 16px;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 10px 0px;
+    opacity: 0.9;
+}
+#progress{
+    width:100%;
+    margin:5px 0;
+    accent-color: #2845b7;
+    cursor: pointer;
+}
+.controls{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:14px;
+}
+.controls button{
+      width:55px;
+      height:50px;
+      margin:15px;
+      border:none;
+      background: transparent;
+      font-size: 25px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3 ease;
+      
+}
+#play{
+    width:70px;
+    height:70px;
+    font-size: 30px;
+}
+.controls button:hover{
+    transform: scale(1.1);
+    background: rgba(255,255,255, 0.2);
+}
+.volume{
+    margin:15px;
+    accent-color: #2845b7;
+    
+}
+.volume input{
+    cursor: pointer;
+}
+#list{
+    margin:18px 0 12px;
+    text-align: center;
+    font-size: 20px;
+}
+.playlist{
+    background: linear-gradient(140deg,grey,black);
+    max-height:150px;
+    overflow-y: auto;
+    border-radius: 18px;
+    
+}
+ul{
+    
+    list-style: none;
+    margin-top:10px;
+    height: 200px;
+}
+li{
+    margin:12px;
+    padding:10px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+li:hover{
+    background-color: #333;
+}
+.active-song{
+    background:#0d9488;
+    color:white;
+    border-radius:8px;
+}
+
+@media(max-width:768px) {
+    body{
+        flex-direction: column;
+    }
+    #cover{
+        width:250px;
+        height:200px;
+    }
+
+    
+}
